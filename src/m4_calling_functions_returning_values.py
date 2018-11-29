@@ -8,7 +8,7 @@ This module demonstrates and practices:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
          Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import m4t_tester
 
@@ -21,7 +21,7 @@ def main():
     run_test_fancy_sums_of_digits()
 
     # -------------------------------------------------------------------------
-    # TODO: 9. DO THIS LAST!
+    # DONE: 9. DO THIS LAST!
     #    -- Uncomment the line of code below to run the main function
     #         in m4t_tester.py (do not make changes to it).
     #         It runs OUR tests on your code.
@@ -38,7 +38,7 @@ def main():
 def run_test_sum_of_digits():
     """ Tests the  sum_of_digits   function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function, as follows:
+    # DONE: 2. Implement this TEST function, as follows:
     #
     #  Step 1:  This TEST function tests the  sum_of_digits  function.
     #    So read the doc-string of the  sum_of_digits  function
@@ -68,10 +68,29 @@ def run_test_sum_of_digits():
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
+
     # -------------------------------------------------------------------------
     # TO DO: 2 (continued).
     # Below this comment, add 3 more test cases of your own choosing.
     # -------------------------------------------------------------------------
+
+    # Test 2:
+    expected = 11
+    answer = sum_of_digits(212213)
+    print('Test 2 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 3:
+    expected = 12
+    answer = sum_of_digits(3333)
+    print('Test 3 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 4:
+    expected = 18
+    answer = sum_of_digits(666)
+    print('Test 3 expected:', expected)
+    print('       actual:  ', answer)
 
 
 def sum_of_digits(number):
@@ -106,6 +125,8 @@ def sum_of_digits(number):
 
     return digit_sum
 
+Answer1 = sum_of_digits(1234)
+print(Answer1)
 
 def run_test_digits_in_cube():
     """ Tests the   digits_in_cube   function. """
@@ -130,6 +151,19 @@ def run_test_digits_in_cube():
     #
     #   Include at least **   3   ** tests.
     # -------------------------------------------------------------------------
+
+    # Test 1:
+    expected = 4
+    answer = run_test_digits_in_cube(11)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 1:
+    expected = 32
+    answer = sum_of_digits(2222)
+    print('Test 2 expected:', expected)
+    print('       actual:  ', answer)
+
     print()
     print('-----------------------------------------------------')
     print('Testing the   digits_in_cube   function:')
@@ -137,6 +171,7 @@ def run_test_digits_in_cube():
 
 
 def digits_in_cube(n):
+    
     """
     What comes in:  A positive integer.
     What goes out:  The sum of the digits in the CUBE of the integer.

@@ -21,7 +21,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #        -- In what direction on the screen
 #           does the positive X-axis point?
-#               right 
+#               right
 #
 #        -- In what direction on the screen
 #           does the positive Y-axis point?
